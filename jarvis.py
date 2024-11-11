@@ -1,13 +1,14 @@
+//jarvis
 import speech_recognition as sr 
 import webbrowser
 import pyttsx3
-import musicLibrary
+import musicLibrary        //this is my module of music library
 import requests
 from openai import OpenAI
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi = "YOUR_API"
+newsapi = "YOUR_API"        
 
 def speak(text):
     engine.say(text)
